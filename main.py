@@ -32,13 +32,13 @@ def check_main(origin, target):
 
 def main():
     try:
-        origin_path = "C:/Users/jinghao/Desktop/work/ruangong/test/orig.txt"
-        target_path = "C:/Users/jinghao/Desktop/work/ruangong/test/orig_0.8_del.txt"
+        #origin_path = "C:/Users/jinghao/Desktop/work/ruangong/test/orig.txt"
+        #target_path = "C:/Users/jinghao/Desktop/work/ruangong/test/orig_0.8_del.txt"
   
-        result_path = "C:/Users/jinghao/Desktop/work/ruangong/test/res.txt"
-        #origin_path = sys.argv[1]  # 论文原文的文件的绝对路径
-        #target_path = sys.argv[2]  # 抄袭版论文的文件的绝对路径
-        #result_path = sys.argv[3]  # 输出结果绝对路径
+        #result_path = "C:/Users/jinghao/Desktop/work/ruangong/test/res.txt"
+        origin_path = sys.argv[1]  # 论文原文的文件的绝对路径
+        target_path = sys.argv[2]  # 抄袭版论文的文件的绝对路径
+        result_path = sys.argv[3]  # 输出结果绝对路径
         origin_data = filter_str(read_file(origin_path))
         target_data = filter_str(read_file(target_path))
         check_result = check_main(origin_data , target_data)
